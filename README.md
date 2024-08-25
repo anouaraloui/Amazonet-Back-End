@@ -12,7 +12,6 @@ This repository contains the backend implementation of an Amazon-like e-commerce
 - **User Authentication & Authorization**: Secure user registration, login, and role-based access control.
 - **Product Management**: Create, read, update, and delete (CRUD) operations for products.
 - **Order Management**: Manage orders, including creation, tracking, and history.
-- **Shopping Cart**: Add, update, and remove products in the user's shopping cart.
 - **Payment Integration**: Integration with payment gateways for handling transactions.
 - **Notifications**: Real-time notifications using Socket.IO for order status updates.
 - **RESTful API**: A well-structured and organized API for interaction between the client and server.
