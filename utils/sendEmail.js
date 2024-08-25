@@ -21,7 +21,7 @@ const transport = nodemailer.createTransport({
 //  Email for the admin
 const welcomeAdmin = (email, name, password) => {
     transport.sendMail({
-        from: process.env.EMAIL_FROM,
+        from: process.env.EMAIL_NODEMAILER,
         to: email,
         subject: "Welcome Admin to your website",
         html: `<div>
@@ -40,7 +40,7 @@ const welcomeAdmin = (email, name, password) => {
 // Email for user when to forget password
 const emailForgotPassword = (email, name, token, userId) => {
     transport.sendMail({
-        from: process.env.EMAIL_FROM,
+        from: process.env.EMAIL_NODEMAILER,
         to: email,
         subject: "Reset Password",
         html: `<div>
@@ -62,7 +62,7 @@ const emailForgotPassword = (email, name, token, userId) => {
 // Email for user to reset password
 const emailResetPassword = (email, name) => {
     transport.sendMail({
-        from: process.env.EMAIL_FROM,
+        from: process.env.EMAIL_NODEMAILER,
         to: email,
         subject: "Password change confirmation",
         html: `<div>
@@ -81,7 +81,7 @@ const emailResetPassword = (email, name) => {
 // Email to the user when registering for this application
 const welcome = (email, name) => {
     transport.sendMail({
-        from: process.env.EMAIL_FROM,
+        from: process.env.EMAIL_NODEMAILER,
         to: email,
         subject: "Welcome our website",
         html: `<div>
@@ -100,7 +100,7 @@ const welcome = (email, name) => {
 // Email for the payement
 const payOrderEmailTemplate = (email, order) => {
     transport.sendMail({
-        from: process.env.EMAIL_FROM,
+        from: process.env.EMAIL_NODEMAILER,
         to: email,
         subject: "Thanks for shopping with us",
         html: `<div>
